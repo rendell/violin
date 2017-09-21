@@ -1,0 +1,10 @@
+library(vioplot)
+AVP <-c(9,8,10,8,8,7,8,10,7,9,8,9,9,9,9,8,9,10)
+MEP <-c(7,10,8,8,10,10,9,7,9,9,9,8,9,8,8,10,9,8)
+POR <-c(3,3,2,3,2,3,4,3,3,2,3,3,3,3,2,3,3,3)
+RED <-c(2,0,1,1,1,1,0,1,2,1,1,1,0,1,2,0,0,0)
+RAIZ <-c(0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0)
+
+violin <- vioplot(AVP, MEP, POR, RAIZ, RED, names=c("AVP", "MEP", "POR","RAIZ","RED"),
+col="gold")        
+title("Seat expectation")
